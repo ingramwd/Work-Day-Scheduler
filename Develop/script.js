@@ -2,6 +2,7 @@
 var currentDateEl = document.querySelector('#Date');
 var p = document.createElement("p");
 var saveButton = document.querySelectorAll(".saveBtn");
+var text = document.querySelectorAll('.description')
 
 // creating date and formatting it into a string
 var date = moment();
@@ -19,13 +20,14 @@ p.textContent = dateFormat;
 
 // save button for text element
 
-$(".time").on("click", "button", function (event) {
-    console.log(event)
-})
-
 var saveData = function () {
     console.log("Hello");
 }
+
+$(".time").on("click", "button", function (event) {
+    console.log(saveData)
+})
+
 
 
 
